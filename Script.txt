@@ -1,0 +1,16 @@
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+
+curl http://162.55.220.72:5005/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+chmod +x myscript.txt
+./myscript.txt
+Содержимое скрипта:
+#!/bin/bash
+cd dir_3
+mkdir dir_10 dir_11 dir_12
+cd dir_10
+touch test_10.txt test_11.txt test_12.txt test_13.json test_14.json
+mkdir dir_15 dir_16 dir_17
+ls -la
+mv test_10.txt test_11.txt dir_15
